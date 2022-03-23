@@ -1,10 +1,12 @@
 
 
+import 'DartControlFlowStatement.dart';
 import 'enumdart.dart';
 
 void main() {
   print("Hello world");
-  dataTypes();
+  callingDartControlFlowStatement();
+ // dataTypes();
 }
 
 void dataTypes() {
@@ -103,5 +105,15 @@ void dataTypes() {
 
 String returnIt() {
   return "sai";
+}
+
+void callingDartControlFlowStatement(){
+  ifElse();
+  ifElseIf();
+  switchCase();
+  forLoop();
+  forInLoop();
+  whileLoop();
+  doWhile();
 }
 
