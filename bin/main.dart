@@ -1,11 +1,16 @@
 
 
+import 'Alien.dart';
 import 'DartControlFlowStatement.dart';
+import 'DartFunction.dart';
 import 'enumdart.dart';
 
 void main() {
   print("Hello world");
   callingDartControlFlowStatement();
+
+  callingFunction();
+  callingObjectOrientation();
  // dataTypes();
 }
 
@@ -115,5 +120,19 @@ void callingDartControlFlowStatement(){
   forInLoop();
   whileLoop();
   doWhile();
+}
+
+void callingFunction(){
+  functionHow();
+  anonymousFunction();
+}
+
+void callingObjectOrientation(){
+
+  Alien alien=Alien("KCR", "Dard World");
+  print(alien.alien_name);
+  Alien.secondaryConstructor("Dard World");
+  alien.showData();
+  Alien.staticMethod();
 }
 
