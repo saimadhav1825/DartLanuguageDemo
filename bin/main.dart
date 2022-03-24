@@ -1,8 +1,10 @@
 
 
 import 'Alien.dart';
+import 'CollectionExample.dart';
 import 'DartControlFlowStatement.dart';
 import 'DartFunction.dart';
+import 'ExceptionClasses.dart';
 import 'enumdart.dart';
 
 void main() {
@@ -11,6 +13,7 @@ void main() {
 
   callingFunction();
   callingObjectOrientation();
+  callingException();
  // dataTypes();
 }
 
@@ -134,5 +137,15 @@ void callingObjectOrientation(){
   Alien.secondaryConstructor("Dard World");
   alien.showData();
   Alien.staticMethod();
+}
+void callingException(){
+  ExceptionClass().mainException();
+
+  ExceptionClass().typeDefMethod(10, 20, Sum);
+  ExceptionClass().typeDefMethod(10, 20, Sub);
+
+  //Collection
+  CollectionExample().callQueue();
+  CollectionExample().callHashMap();
 }
 
