@@ -1,5 +1,8 @@
 
+import 'Operators.dart';
+
 void main(){
+  arithmeticOperators();
   variablesLearn();
 }
 
