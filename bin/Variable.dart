@@ -1,10 +1,25 @@
 
+import 'package:test/expect.dart';
+
 import 'ControlFlow.dart';
+import 'DartUtilities.dart';
 import 'Functions.dart';
 import 'ObjectOrientation.dart';
 import 'Operators.dart';
 
 void main(){
+
+  //AsyncTask
+  mains();
+
+  //Generators
+  firstGenerator(10).forEach(print);
+  geeksForGeeks(10).forEach(print);
+
+  //enum
+  for(WeekDays weekDays in WeekDays.values){
+    print(weekDays.name);
+  }
 
   //ObjectOrientation
   objectOrientation();
