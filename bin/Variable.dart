@@ -1,14 +1,21 @@
 
 import 'ControlFlow.dart';
+import 'Functions.dart';
 import 'Operators.dart';
 
 void main(){
+
+  //functions
+  var so=add(10, 20);
+  print(so);
+
   //condition flow
   ifElse();
   //operators
   arithmeticOperators();
   //variables
   variablesLearn();
+
 }
 
 void variablesLearn(){
